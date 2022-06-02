@@ -17,6 +17,9 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <junit.version>4.13.2</junit.version>
+        <selenium.version>4.1.4</selenium.version>
+        <restAssured.version>5.0.1</restAssured.version>
     </properties>
 
     <dependencyManagement>
@@ -24,18 +27,21 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>4.13.2</version>
+<!--                <version>4.13.2</version>-->
+                <version>${junit.version}</version>
                 <scope>test</scope>
             </dependency>
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
-                <version>4.1.4</version>
+<!--                <version>4.1.4</version>-->
+                <version>${selenium.version}</version>
             </dependency>
             <dependency>
                 <groupId>io.rest-assured</groupId>
                 <artifactId>rest-assured</artifactId>
-                <version>5.0.1</version>
+<!--                <version>5.0.1</version>-->
+                <version>${restAssured.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
