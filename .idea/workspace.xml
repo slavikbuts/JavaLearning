@@ -5,11 +5,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fda7e64-cff1-4636-a059-220377933441" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/drivers/geckodriver.exe" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/driverSetup/DriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/driverSetup/DriverManagerFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/driverSetup/DriverType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/driverSetup/drivers/ChromeDriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/driverSetup/drivers/FireFoxDriverManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/pages/BasePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/pages/NavigatePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/steps/NavigateStep.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/auto/tests/AssertTitle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/ContactUsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/HomePage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/LoginPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/setup/Utilities.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/setup/WebDriverSettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests/BaseTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests/contactUsTests/ContactUsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests/loginTests/LoginErrorMessagesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests/loginTests/LoginTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/test.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaRestAssured/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaRestAssured/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/JavaSelenium/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSelenium/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/FirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/FirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSelenium/src/test/drivers/chromedriver.exe" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSelenium/src/test/drivers/chromedriver.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/FirstTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/WebDriverSettings.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -20,6 +43,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -29,6 +53,13 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="jdkForImporter" value="openjdk-17" />
+      </MavenImportingSettings>
+    </option>
   </component>
   <component name="ProjectId" id="291aLpFMaH2uvAgVzzjI9PKWFOf" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -40,9 +71,13 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "jdk.selected.JAVA_MODULE": "11",
-    "last_opened_file_path": "C:/Projects/delete me/asdasdasda/JavaLearning/JavaSelenium/src/test/java",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+    "last_opened_file_path": "C:/Projects/delete me/asdasdasda/JavaLearning/JavaSelenium/src/test/java/automationPractice/tests",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.importing"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -52,67 +87,113 @@
       <recent name="C:\Projects\delete me\asdasdasda\JavaLearning\JavaRestAssured" />
       <recent name="C:\Projects\delete me\asdasdasda\JavaLearning" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Projects\delete me\asdasdasda\JavaLearning\JavaSelenium\src\test\java\automationPractice\data" />
+      <recent name="C:\Projects\delete me\asdasdasda\JavaLearning\JavaSelenium\src\test\java" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="automationPractice.tests" />
+      <recent name="automationPractice.pages" />
+      <recent name="auto" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FirstTest">
-    <configuration name="RestAssuredTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="RestAssuredTest" />
-      <module name="JavaRestAssured" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FirstTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.LoginTest.verifySuccessfulLogin">
+    <configuration name="ContactUsTest.verifySuccessfulLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="JavaSelenium" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="automationPractice.*" />
+          <option name="PATTERN" value="automationPractice.tests.contactUsTests.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="automationPractice" />
-      <option name="MAIN_CLASS_NAME" value="automationPractice.FirstTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="automationPractice.tests.contactUsTests" />
+      <option name="MAIN_CLASS_NAME" value="automationPractice.tests.contactUsTests.ContactUsTest" />
+      <option name="METHOD_NAME" value="verifySuccessfulLogin" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RestAssuredTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaRestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="RestAssuredTest" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="ContactUsTest.verifySuccessfulSendingMessage" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationPractice.tests.contactUsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationPractice.tests.contactUsTests" />
+      <option name="MAIN_CLASS_NAME" value="automationPractice.tests.contactUsTests.ContactUsTest" />
+      <option name="METHOD_NAME" value="verifySuccessfulSendingMessage" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaRestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="LoginErrorMessagesTest.verifyLoginWithoutEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationPractice.tests.contactUsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationPractice.tests.loginTests" />
+      <option name="MAIN_CLASS_NAME" value="automationPractice.tests.loginTests.LoginErrorMessagesTest" />
+      <option name="METHOD_NAME" value="verifyLoginWithoutEmail" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="JavaRestAssured" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="test2" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="LoginTest.verifySuccessfulLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationPractice.tests.contactUsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationPractice.tests.loginTests" />
+      <option name="MAIN_CLASS_NAME" value="automationPractice.tests.loginTests.LoginTest" />
+      <option name="METHOD_NAME" value="verifySuccessfulLogin" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="tests in JavaSelenium" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="JavaSelenium" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="automationPractice.tests.contactUsTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="automationPractice.tests" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="JUnit.LoginTest.verifySuccessfulLogin" />
+      <item itemvalue="JUnit.ContactUsTest.verifySuccessfulLogin" />
+      <item itemvalue="JUnit.ContactUsTest.verifySuccessfulSendingMessage" />
+      <item itemvalue="JUnit.tests in JavaSelenium" />
+      <item itemvalue="JUnit.LoginErrorMessagesTest.verifyLoginWithoutEmail" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FirstTest" />
-        <item itemvalue="JUnit.RestAssuredTest" />
-        <item itemvalue="JUnit.test2" />
-        <item itemvalue="JUnit.test" />
-        <item itemvalue="Application.RestAssuredTest" />
+        <item itemvalue="JUnit.LoginTest.verifySuccessfulLogin" />
+        <item itemvalue="JUnit.tests in JavaSelenium" />
+        <item itemvalue="JUnit.ContactUsTest.verifySuccessfulSendingMessage" />
+        <item itemvalue="JUnit.ContactUsTest.verifySuccessfulLogin" />
+        <item itemvalue="JUnit.LoginErrorMessagesTest.verifyLoginWithoutEmail" />
       </list>
     </recent_temporary>
   </component>
@@ -132,11 +213,63 @@
       <option name="project" value="LOCAL" />
       <updated>1652780595460</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="dependencyManagement implementation">
+      <created>1653041797013</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653041797013</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add references to dependencies and version variables">
+      <created>1654158502840</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654158502840</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit" />
+    <MESSAGE value="dependencyManagement implementation" />
+    <MESSAGE value="add references to dependencies and version variables" />
+    <option name="LAST_COMMIT_MESSAGE" value="add references to dependencies and version variables" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/HomePage.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="27" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/HomePage.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/junit/junit/4.13.2/junit-4.13.2.jar!/org/junit/runner/OrderWith.class</url>
+          <line>19</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/pages/LoginPage.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests/loginTests/LoginErrorMessagesTest.java</url>
+          <line>60</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/JavaSelenium/src/test/java/automationPractice/tests/contactUsTests/ContactUsTest.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
