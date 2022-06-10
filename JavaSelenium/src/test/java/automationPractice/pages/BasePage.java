@@ -5,6 +5,7 @@ import org.openqa.selenium.By;
 
 public class BasePage extends WebDriverSettings{
     public static void navigateTo(String url){
+        setUpChromeDriver();
         driver.get(url);
     }
 

@@ -21,7 +21,6 @@ public class LoginErrorMessagesTest extends LoginPage {
 
     @BeforeClass
     public static void before() throws IOException {
-        setUpChromeDriver();
         navigateTo(utilities.getProperty("url"));
         HomePage homePage = new HomePage();
         homePage.clickOnSignInButtonOnHomePage();

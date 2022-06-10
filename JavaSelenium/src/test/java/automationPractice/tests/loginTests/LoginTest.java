@@ -17,7 +17,6 @@ public class LoginTest extends LoginPage {
 
     @BeforeClass
     public static void before() throws IOException {
-        setUpChromeDriver();
         log.info("Navigate to URL " + utilities.getProperty("url"));
         navigateTo(utilities.getProperty("url"));
         HomePage homePage = new HomePage();

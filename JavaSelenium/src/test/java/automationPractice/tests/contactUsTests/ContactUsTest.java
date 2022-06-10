@@ -9,7 +9,6 @@ import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
 
-import java.awt.*;
 import java.io.IOException;
 
 public class ContactUsTest extends ContactUsPage {
@@ -19,7 +18,6 @@ public class ContactUsTest extends ContactUsPage {
 
     @BeforeClass
     public static void before() throws IOException {
-        setUpChromeDriver();
         navigateTo(utilities.getProperty("url"));
         HomePage homePage = new HomePage();
         homePage.clickOnSignInButtonOnHomePage();

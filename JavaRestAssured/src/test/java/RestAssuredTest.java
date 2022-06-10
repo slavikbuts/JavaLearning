@@ -1,12 +1,9 @@
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
-import jdk.jshell.Snippet;
-import jdk.net.SocketFlow;
 import org.junit.Assert;
 import org.junit.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.MatcherAssert.assertThat;
 
 public class RestAssuredTest {
     final String url = "https://reqres.in/api/users/2";
