@@ -1,19 +1,16 @@
 package automationPractice.pages;
 
 import automationPractice.setup.WebDriverSettings;
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
-public class BasePage extends WebDriverSettings{
-    public static void navigateTo(String url){
-        setUpChromeDriver();
-        driver.get(url);
-    }
+public class BasePage {
+  protected WebDriver driver = WebDriverSettings.getDriver();
 
-    public String getTitle(){
-        return driver.getTitle();
-    }
+  public void navigateTo(String url) {
+    driver.get(url);
+  }
 
-    public void clickOn(By locator){
-        driver.findElement(locator).click();
-    }
+  public String getTitle() {
+    return driver.getTitle();
+  }
 }

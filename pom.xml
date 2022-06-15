@@ -17,20 +17,22 @@
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-        <junit.version>4.13.2</junit.version>
+        <testng.version>7.6.0</testng.version>
         <selenium.version>4.1.4</selenium.version>
         <restAssured.version>5.0.1</restAssured.version>
         <log4j.version>2.17.2</log4j.version>
+        <lombok.version>1.18.20</lombok.version>
     </properties>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>junit</groupId>
-                <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>${testng.version}</version>
                 <scope>test</scope>
             </dependency>
+
             <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-java</artifactId>
@@ -52,6 +54,20 @@
                 <artifactId>log4j-api</artifactId>
                 <version>${log4j.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>${lombok.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <!--            <dependency>-->
+            <!--                <groupId>junit</groupId>-->
+            <!--                <artifactId>junit</artifactId>-->
+            <!--                <version>${junit.version}</version>-->
+            <!--                <scope>test</scope>-->
+            <!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 

@@ -3,73 +3,89 @@ package automationPractice.tests.loginTests;
 import automationPractice.pages.HomePage;
 import automationPractice.pages.LoginPage;
 import automationPractice.setup.Utilities;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import automationPractice.tests.BaseTest;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class LoginErrorMessagesTest extends LoginPage {
-    final public static String TITLE = "Login - My Store";
-    public LoginErrorMessagesTest(){
-        Assert.assertTrue("Expected Title to be "+TITLE+", but instead was "
-                + getTitle(), getTitle().equals(TITLE));
-    }
-    static Utilities utilities = new Utilities();
+import static automationPractice.setup.WebDriverSettings.getDriver;
 
+public class LoginErrorMessagesTest extends BaseTest {
+  protected WebDriver driver = getDriver();
+  static Utilities utilities = new Utilities();
+  LoginPage loginPage = new LoginPage(driver);
 
-    @BeforeClass
-    public static void before() throws IOException {
-        navigateTo(utilities.getProperty("url"));
-        HomePage homePage = new HomePage();
-        homePage.clickOnSignInButtonOnHomePage();
-    }
+  @BeforeClass
+  public void before() throws IOException {
+    loginPage.navigateTo(utilities.getProperty("url"));
+    HomePage homePage = new HomePage(driver);
+    homePage.clickOnSignInButtonOnHomePage();
+  }
 
-    @AfterClass
-    public static void after(){
-        closeChromeDriver();
-    }
+  @Test
+  public void verifyLoginWithoutPassword() throws IOException {
+    loginPage.setEmail(utilities.getProperty("correct.email"));
+    loginPage.clearPasswordField();
+    loginPage.clickOnSubmitButton();
 
-    @Test
-    public void verifyLoginWithoutPassword() throws IOException {
-        setEmail(utilities.getProperty("correct.email"));
-        clearPasswordField();
-        clickOnSubmitButton();
+    String expectedErrorMessage = "Password is required.";
 
-        Assert.assertTrue("Expected error message be 'Password is required.', but instead was "
-                + getErrorMessage(), getErrorMessage().equals("Password is required."));
-    }
+    Assert.assertTrue(
+        loginPage.getErrorMessage().equals(expectedErrorMessage),
+        "Expected error message be "
+            + expectedErrorMessage
+            + ", but instead was "
+            + loginPage.getErrorMessage());
+  }
 
-    @Test
-    public void verifyLoginWithoutEmail() throws IOException {
-        clearEmailField();
-        setPassword(utilities.getProperty("correct.password"));
-        clickOnSubmitButton();
+  @Test
+  public void verifyLoginWithoutEmail() throws IOException {
+    loginPage.clearEmailField();
+    loginPage.setPassword(utilities.getProperty("correct.password"));
+    loginPage.clickOnSubmitButton();
 
-        Assert.assertTrue("Expected error message be 'An email address required.', but instead was "
-                + getErrorMessage(), getErrorMessage().equals("An email address required."));
-    }
+    String expectedErrorMessage = "An email address required.";
 
-    @Test
-    public void verifyLoginWitIncorrectPassword() throws IOException {
-        setEmail(utilities.getProperty("correct.email"));
-        setPassword(utilities.getProperty("incorrect.password"));
-        clickOnSubmitButton();
+    Assert.assertTrue(
+        loginPage.getErrorMessage().equals(expectedErrorMessage),
+        "Expected error message be "
+            + expectedErrorMessage
+            + ", but instead was "
+            + loginPage.getErrorMessage());
+  }
 
-        Assert.assertTrue("Expected error message be 'Authentication failed.', but instead was "
-                + getErrorMessage(), getErrorMessage().equals("Authentication failed."));
-    }
+  @Test
+  public void verifyLoginWitIncorrectPassword() throws IOException {
+    loginPage.setEmail(utilities.getProperty("correct.email"));
+    loginPage.setPassword(utilities.getProperty("incorrect.password"));
+    loginPage.clickOnSubmitButton();
 
+    String expectedErrorMessage = "Authentication failed.";
 
+    Assert.assertTrue(
+        loginPage.getErrorMessage().equals(expectedErrorMessage),
+        "Expected error message be "
+            + expectedErrorMessage
+            + ", but instead was "
+            + loginPage.getErrorMessage());
+  }
 
-    @Test
-    public void verifyLoginWithIncorrectEmail() throws IOException {
-        setEmail(utilities.getProperty("incorrect.email"));
-        setPassword(utilities.getProperty("correct.password"));
-        clickOnSubmitButton();
+  @Test
+  public void verifyLoginWithIncorrectEmail() throws IOException {
+    loginPage.setEmail(utilities.getProperty("incorrect.email"));
+    loginPage.setPassword(utilities.getProperty("correct.password"));
+    loginPage.clickOnSubmitButton();
 
-        Assert.assertTrue("Expected error message be 'Invalid email address.', but instead was "
-                + getErrorMessage(), getErrorMessage().equals("Invalid email address."));
-    }
+    String expectedErrorMessage = "Invalid email address.";
+
+    Assert.assertTrue(
+        loginPage.getErrorMessage().equals(expectedErrorMessage),
+        "Expected error message be "
+            + expectedErrorMessage
+            + ", but instead was "
+            + loginPage.getErrorMessage());
+  }
 }

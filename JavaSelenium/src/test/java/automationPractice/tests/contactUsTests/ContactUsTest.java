@@ -4,48 +4,47 @@ import automationPractice.pages.ContactUsPage;
 import automationPractice.pages.HomePage;
 import automationPractice.pages.LoginPage;
 import automationPractice.setup.Utilities;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import automationPractice.tests.BaseTest;
+import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class ContactUsTest extends ContactUsPage {
+import static automationPractice.setup.WebDriverSettings.getDriver;
 
-    static Utilities utilities = new Utilities();
+public class ContactUsTest extends BaseTest {
+  protected WebDriver driver = getDriver();
+  static Utilities utilities = new Utilities();
+  LoginPage loginPage = new LoginPage(driver);
 
+  ContactUsPage contactUsPage = new ContactUsPage(driver);
 
-    @BeforeClass
-    public static void before() throws IOException {
-        navigateTo(utilities.getProperty("url"));
-        HomePage homePage = new HomePage();
-        homePage.clickOnSignInButtonOnHomePage();
-        LoginPage loginPage = new LoginPage();
-        loginPage.setEmail(utilities.getProperty("correct.email"));
-        loginPage.setPassword(utilities.getProperty("correct.password"));
-        loginPage.clickOnSubmitButton();
-        homePage.clickOnContactLinkOnHomePage();
-    }
+  @BeforeClass
+  public void before() throws IOException {
+    loginPage.navigateTo(utilities.getProperty("url"));
+    HomePage homePage = new HomePage(driver);
+    homePage.clickOnSignInButtonOnHomePage();
+    loginPage.setEmail(utilities.getProperty("correct.email"));
+    loginPage.setPassword(utilities.getProperty("correct.password"));
+    loginPage.clickOnSubmitButton();
+    homePage.clickOnContactLinkOnHomePage();
+  }
 
-    @AfterClass
-    public static void after(){
-        closeChromeDriver();
-    }
+  @Test
+  public void verifySuccessfulSendingMessage() {
 
-    @Test
-    public void verifySuccessfulSendingMessage() {
-        String alertMessage = "Your message has been successfully sent to our team.";
-        selectSubject("Webmaster");
-        typeMessage("some text for testing");
-        clickSendButton();
+    String alertMessage = "Your message has been successfully sent to our team.";
+    contactUsPage.selectSubject("Webmaster");
+    contactUsPage.typeMessage("some text for testing");
+    contactUsPage.clickSendButton();
 
-        Assert.assertTrue("Expected alert message to be " + alertMessage + " ,but instead was "
-                + getAlertMessage(), getAlertMessage().equals(alertMessage));
-
-    }
-
-
-
-
+    Assert.assertTrue(
+        contactUsPage.getAlertMessage().equals(alertMessage),
+        "Expected alert message to be "
+            + alertMessage
+            + " ,but instead was "
+            + contactUsPage.getAlertMessage());
+  }
 }

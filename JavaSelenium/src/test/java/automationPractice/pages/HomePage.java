@@ -1,30 +1,37 @@
 package automationPractice.pages;
 
-import org.junit.Assert;
-import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage extends BasePage {
-  public static final String TITLE = "My Store";
+  //  public static final String TITLE = "My Store";
+  //  public HomePage() {
+  //    Assert.assertTrue(
+  //            getTitle().equals(TITLE),
+  //            "Expected Title to be " + TITLE + ", but instead was " + getTitle());
+  //  }
+  protected WebDriver driver;
 
-  public HomePage() {
-    Assert.assertTrue(
-        "Expected Title to be " + TITLE + ", but instead was " + getTitle(),
-        getTitle().equals(TITLE));
+  public HomePage(WebDriver driver) {
+    this.driver = driver;
+    PageFactory.initElements(driver, this);
   }
 
-  By contactLink = By.id("contact-link");
-  By signInButton = By.className("login");
-  //    public HomePage(WebDriver driver) {
-  //        super(driver);
-  //    }
-  // WebDriverSettings ddd = new WebDriverSettings();
+  @FindBy(id = "contact-link")
+  WebElement contactLink;
+
+  @FindBy(className = "login")
+  WebElement signInButton;
+
+  //  By contactLink = By.id("contact-link");
+  //  By signInButton = By.className("login");
   public void clickOnContactLinkOnHomePage() {
-    clickOn(contactLink);
-    //        getDriver().findElement(By.id("contact-link")).click();
+    contactLink.click();
   }
 
   public void clickOnSignInButtonOnHomePage() {
-    clickOn(signInButton);
-    //        getDriver().findElement(By.id("contact-link")).click();
+    signInButton.click();
   }
 }
