@@ -38,17 +38,20 @@
                 <artifactId>selenium-java</artifactId>
                 <version>${selenium.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>io.rest-assured</groupId>
                 <artifactId>rest-assured</artifactId>
                 <version>${restAssured.version}</version>
                 <scope>test</scope>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-core</artifactId>
                 <version>${log4j.version}</version>
             </dependency>
+
             <dependency>
                 <groupId>org.apache.logging.log4j</groupId>
                 <artifactId>log4j-api</artifactId>
@@ -61,13 +64,6 @@
                 <version>${lombok.version}</version>
                 <scope>provided</scope>
             </dependency>
-
-            <!--            <dependency>-->
-            <!--                <groupId>junit</groupId>-->
-            <!--                <artifactId>junit</artifactId>-->
-            <!--                <version>${junit.version}</version>-->
-            <!--                <scope>test</scope>-->
-            <!--            </dependency>-->
         </dependencies>
     </dependencyManagement>
 
